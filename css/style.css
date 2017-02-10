@@ -3,8 +3,7 @@ body{
     //background: #849d8f;
     font-size: 14px;
     line-height: 16px;
-    background: url(../image/ice-cream-1.png) no-repeat 40% 112px,
-                url(../image/ice-cream-2.png) no-repeat 62% 166px,
+    background: url(..//image/ice-cream-bg.png) no-repeat 50% 112px,
                 #849d8f url(../image/backlight.png) no-repeat 50% 0;
     position: relative;
 }
@@ -143,13 +142,13 @@ header, main, footer{
     height: 17px;
     background-image: url(../image/sprite.png);
     background-repeat: no-repeat;
-    background-position: -280px -89px;
+    background-position: -336px -62px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .search:hover.search::after{
-    background-position: -287px -52px;
+    background-position: -317px -15px;
 }
 .search:hover.search form{
     visibility: visible;
@@ -197,13 +196,13 @@ header, main, footer{
     background-repeat: no-repeat;
     width: 20px;
     height: 19px;
-    background-position: -200px -50px;
+    background-position: -286px -65px;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
 }
 .login:hover.login::after{
-    background-position: -159px -50px;
+    background-position: -236px -65px;
 }
 .login:hover.login form{
     visibility: visible;
@@ -269,10 +268,15 @@ header, main, footer{
     background-repeat: no-repeat;
     width: 21px;
     height: 20px;
-    background-position: -51px -10px;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+}
+.basket_empty::after{
+    background-position: -66px -15px;
+}
+.basket_full::after{
+    background-position: -15px -15px;
 }
 .mode_and_phone{
     position: absolute;
@@ -462,22 +466,22 @@ header, main, footer{
 .description_item_one::before{
     width: 49px;
     height: 49px;
-    background-position: -211px -89px;
+    background-position: -153px -157px;
 }
 .description_item_two::before{
     width: 49px;
     height: 49px;
-    background-position: -190px -158px;
+    background-position: -153px -238px;
 }
 .description_item_three::before{
     width: 49px;
     height: 49px;
-    background-position: -90px -50px;
+    background-position: -157px -65px;
 }
 .description_item_four::before{
     width: 49px;
     height: 49px;
-    background-position: -329px -10px;
+    background-position: -383px -15px;
 }
 .blog_news, .sign_up{
     width: 560px;
@@ -640,22 +644,22 @@ footer{
 .twitter{
     width: 32px;
     height: 32px;
-    background-position: -341px -132px;
+    background-position: -399px -157px;
 }
 .instagram{
     width: 32px;
     height: 32px;
-    background-position: -138px -158px;
+    background-position: -232px -176px;
 }
 .facebook{
     width: 32px;
     height: 32px;
-    background-position: -159px -89px;
+    background-position: -236px -114px;
 }
 .vk{
     width: 32px;
     height: 32px;
-    background-position: -341px -184px;
+    background-position: -400px -219px;
 }
 .info_links a{
     display: inline-block;
@@ -685,7 +689,7 @@ footer{
     display: block;
     width: 15px;
     height: 13px;
-    background-position: -252px -41px;
+    background-position: -298px -114px;
 }
 .copyright{
     float: right;
@@ -698,7 +702,7 @@ footer{
     display: block;
     width: 108px;
     height: 38px;
-    background-position: -10px -141px;
+    background-position: -15px -176px;
     margin-left: 77px;
     margin-bottom: 6px;
 }
@@ -745,7 +749,7 @@ footer{
     background-repeat: no-repeat;
     width: 12px;
     height: 11px;
-    background-position: -252px -10px;
+    background-position: -115px -65px;
     cursor: pointer;
 }
 .feedback_form input[type="text"],
@@ -783,212 +787,142 @@ textarea{
 
 
 
+
+
+
+
+
+
+
+
 .sprite {
-    background-image: url(../image/sprite.png);
+    background-image: url(..//image/sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-basket-hover-icon {
-    width: 21px;
-    height: 20px;
-    background-position: -10px -10px;
-}
 
-.sprite-basket-icon {
-    width: 21px;
-    height: 20px;
-    background-position: -51px -10px;
-}
+
+
 
 .sprite-checkbox {
     width: 20px;
     height: 20px;
-    background-position: -92px -10px;
+    background-position: -117px -15px;
 }
 
 .sprite-checkbox-checked {
     width: 20px;
     height: 20px;
-    background-position: -132px -10px;
+    background-position: -167px -15px;
 }
 
 .sprite-checkbox-checked-disabled {
     width: 20px;
     height: 20px;
-    background-position: -172px -10px;
+    background-position: -217px -15px;
 }
 
 .sprite-checkbox-checked-hover {
     width: 20px;
     height: 20px;
-    background-position: -212px -10px;
+    background-position: -267px -15px;
 }
 
 .sprite-checkbox-disabled {
     width: 20px;
     height: 20px;
-    background-position: -10px -50px;
+    background-position: -15px -65px;
 }
 
 .sprite-checkbox-hover {
     width: 20px;
     height: 20px;
-    background-position: -50px -50px;
+    background-position: -65px -65px;
 }
 
-.sprite-close {
-    width: 12px;
-    height: 11px;
-    background-position: -252px -10px;
-}
 
-.sprite-cow-icon {
-    width: 49px;
-    height: 49px;
-    background-position: -90px -50px;
-}
 
-.sprite-enter-hover-icon {
-    width: 21px;
-    height: 19px;
-    background-position: -159px -50px;
-}
 
-.sprite-enter-icon {
-    width: 20px;
-    height: 19px;
-    background-position: -200px -50px;
-}
 
-.sprite-fb-icon {
-    width: 32px;
-    height: 32px;
-    background-position: -159px -89px;
-}
 
-.sprite-heart-icon {
-    width: 15px;
-    height: 13px;
-    background-position: -252px -41px;
-}
 
-.sprite-html-logo {
-    width: 108px;
-    height: 38px;
-    background-position: -10px -141px;
-}
 
-.sprite-ice-cream-icon {
-    width: 49px;
-    height: 49px;
-    background-position: -211px -89px;
-}
 
-.sprite-instagram-icon {
-    width: 32px;
-    height: 32px;
-    background-position: -138px -158px;
-}
 
-.sprite-leaf-icon {
-    width: 49px;
-    height: 49px;
-    background-position: -190px -158px;
-}
+
+
+
+
 
 .sprite-pager_next {
     width: 9px;
     height: 14px;
-    background-position: -259px -158px;
+    background-position: -298px -157px;
 }
 
 .sprite-pager_prev {
     width: 9px;
     height: 14px;
-    background-position: -259px -192px;
+    background-position: -294px -201px;
 }
 
 .sprite-r {
     width: 27px;
     height: 32px;
-    background-position: -10px -227px;
+    background-position: -15px -245px;
 }
 
 .sprite-radio {
     width: 22px;
     height: 22px;
-    background-position: -57px -227px;
+    background-position: -72px -245px;
 }
 
 .sprite-radio-checked {
     width: 22px;
     height: 22px;
-    background-position: -99px -227px;
+    background-position: -232px -245px;
 }
 
 .sprite-radio-checked-disabled {
     width: 22px;
     height: 22px;
-    background-position: -141px -227px;
+    background-position: -284px -245px;
 }
 
 .sprite-radio-checked-hover {
     width: 22px;
     height: 22px;
-    background-position: -183px -227px;
+    background-position: -72px -297px;
 }
 
 .sprite-radio-disabled {
     width: 22px;
     height: 22px;
-    background-position: -225px -227px;
+    background-position: -232px -297px;
 }
 
 .sprite-radio-hover {
     width: 22px;
     height: 22px;
-    background-position: -287px -10px;
+    background-position: -284px -297px;
 }
 
-.sprite-search-hover-icon {
-    width: 17px;
-    height: 17px;
-    background-position: -287px -52px;
-}
 
-.sprite-search-icon {
-    width: 17px;
-    height: 17px;
-    background-position: -280px -89px;
-}
 
-.sprite-thermometer-icon {
-    width: 49px;
-    height: 49px;
-    background-position: -329px -10px;
-}
+
 
 .sprite-thumbnail_1 {
     width: 33px;
     height: 33px;
-    background-position: -324px -79px;
+    background-position: -383px -94px;
 }
 
 .sprite-thumbnail_2 {
     width: 33px;
     height: 33px;
-    background-position: -288px -132px;
+    background-position: -337px -157px;
 }
 
-.sprite-twitter-icon {
-    width: 32px;
-    height: 32px;
-    background-position: -341px -132px;
-}
 
-.sprite-vk-icon {
-    width: 32px;
-    height: 32px;
-    background-position: -341px -184px;
-}
