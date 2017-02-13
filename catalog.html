@@ -36,7 +36,30 @@
                    </div>
                 </form>
            </span>
-           <span class="client_tools_item basket basket_full">2 товара</span>
+           <span class="client_tools_item basket basket_full">2 товара
+               <div class="basket_content">
+                   <table class="basket_content_wrap">
+                       <tr class="basket_content_item">
+                           <td class="delete_content"><span></span></td>
+                           <td class="basket_content_thumbnail"><img src="image/thumbnail_1.png" alt="" width="33" height="33"></td>
+                           <td class="basket_content_name">Пломбир с апельсиновым джемом</td>
+                           <td class="basket_content_price">1,5 кг х <span>200 руб.</span></td>
+                           <td class="summary_price">300 руб.</td>
+                       </tr>
+                       <tr class="basket_content_item">
+                           <td class="delete_content"><span></span></td>
+                           <td class="basket_content_thumbnail"><img src="image/thumbnail_2.png" alt="" width="33" height="33"></td>
+                           <td class="basket_content_name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                           <td class="basket_content_price">1,5 кг х <span>300 руб.</span></td>
+                           <td class="summary_price">450 руб.</td>
+                       </tr>
+                   </table>
+                   <div class="summary_and_checkout">
+                       <span>Итого: 750 руб.</span>
+                       <a href="">Оформить заказ</a>
+                   </div>
+               </div>
+           </span>
            <div class="mode_and_phone">
                <span class="mode">С 10 до 20, ежедневно</span>
                <span class="phone">8 812 450-25-25</span>
@@ -53,14 +76,12 @@
        <form class="sorting_form" action="" method="get">
            <div class="sorting_item">
                <div class="sorting_item_head">Сортировка</div>
-                <div class="sorting_wrap">
-                   <select name="sorting_type" id="">
-                       <option value="popular">по популярности</option>
-                       <option value="min_price">сначала недорогие</option>
-                       <option value="max_price">сначала дорогие</option>
-                       <option value="fatness">по жирности</option>
-                    </select>
-                </div>
+                  <select name="sorting_type" id="">
+                      <option value="popular">по популярности</option>
+                      <option value="min_price">сначала недорогие</option>
+                      <option value="max_price">сначала дорогие</option>
+                      <option value="fatness">по жирности</option>
+                   </select>    
            </div>
            <div class="sorting_item">
                <div class="sorting_item_head">Цена:
@@ -77,7 +98,7 @@
            </div>
            <div class="sorting_item">
                <div class="sorting_item_head">Жирность</div>
-               <div class="sorting_wrap">
+               <div class="sorting_wrap fatness">
                    <input type="radio" name="fatness" value="0%" id="0">
                    <label for="0">0%</label>
                    <input type="radio" name="fatness" value="10%" id="10">
@@ -106,77 +127,83 @@
            <input type="submit" value="Применить">
        </form>
        <div class="products clearfix">
-           <div class="product">
-               <img src="image/ice-cream-hit-1.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
+          <div class="products_row products_row_one clearfix">
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-1.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-2.png" alt="">
+                   <span class="price">380<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-3.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-4.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
            </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-2.png" alt="">
-               <span class="price">380<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-3.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-4.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-5.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-6.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-7.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-8.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-9.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-10.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-11.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
-           </div>
-           <div class="product">
-               <img src="image/ice-cream-hit-12.png" alt="">
-               <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
-               <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-               <a href="" class="quick_view">Быстрый просмотр</a>
+           <div class="products_row products_row_two clearfix">
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-5.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-6.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-7.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-8.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+          </div>
+          <div class="products_row products_row_three clearfix">
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-9.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-10.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-11.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
+               <div class="product">
+                   <img class="product_image" src="image/ice-cream-hit-12.png" alt="">
+                   <span class="price">310<span class="ruble"><img src="image/r.png" alt=""></span>/кг</span>
+                   <p class="product_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                   <div class="quick_view"><a href="">Быстрый просмотр</a></div>
+               </div>
            </div>
        </div>
        <div class="pager">
