@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no_js" lang="en">
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -137,7 +137,7 @@
            <div class="contact">
                <p class="address">Адрес главного офиса и офлайн магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                <p class="tel">Для заказов по телефону:<span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-               <a href="" class="feedback_button btn">Форма обратной связи</a>
+               <a href="feedback.html" class="feedback_button btn">Форма обратной связи</a>
            </div>
        </section>
    </main>
@@ -175,10 +175,12 @@
     </div>
     
     <script>
-    
+        var html = document.documentElement;
         var feedback_btn = document.querySelector(".feedback_button");
         var feedback_close = document.querySelector(".close");
         var feedback = document.querySelector(".feedback_wrapper");
+        
+        html.className = html.className.replace("no_js","js");
         
         feedback_btn.addEventListener('click', function(event){
             event.preventDefault();
