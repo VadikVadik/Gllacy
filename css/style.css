@@ -449,7 +449,7 @@ footer{
     color: #999;
 }
 .summary_price{
-    width: 50px;
+    width: 55px;
 }
 .summary_and_checkout{
     padding-top: 16px;
@@ -621,7 +621,8 @@ footer{
 }
 .price{
     position: absolute;
-    top: 202px;    
+    top: 202px;
+    left: 0;
     font-size: 45px;
     line-height: 45px;
     font-weight: bold;
@@ -1186,9 +1187,10 @@ input[name="max_price"]{
     left: 60%;
 }
 .fatness{
-    width: 440px;
+    width: 442px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    padding-right: 10px;
 }
 input[type="radio"],
 input[type="checkbox"]{
@@ -1200,6 +1202,9 @@ input[type="checkbox"]+label{
     padding-left: 32px;
     padding-right: 19px;
     cursor: pointer;
+}
+input[type="radio"]:last-of-type+label{
+    padding-right: 0;
 }
 input[type="radio"]+label::before,
 input[type="checkbox"]+label::before{
