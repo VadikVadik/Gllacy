@@ -32,13 +32,13 @@
         var res_max = (event.pageX - this.offsetLeft) + 10;
         var price_min = separator_min.style.left;
         var price_max = separator_max.style.left;
-
-        if (flag_min && (res_min > 0) && (res_min < (separator_max.offsetLeft))) {
+    
+        if (flag_min && (res_min > 0) && (res_min < (separator_max.offsetLeft - 10))) {
             separator_min.style.left = res_min + 'px';
             min_price.value = parseInt(price_min) * 5;
             bar.style.width = (separator_max.offsetLeft - res_min) + 'px';
             bar.style.marginLeft = res_min + 'px';
-        }else if(flag_max && (res_max > separator_min.offsetLeft) && (res_max < scale.offsetWidth + 5)){
+        }else if(flag_max && (res_max > separator_min.offsetLeft + 10) && (res_max < scale.offsetWidth + 5)){
             separator_max.style.left = res_max + 'px';
             max_price.value = parseInt(price_max) * 5;
             bar.style.width = (separator_max.offsetLeft - separator_min.offsetLeft) + 'px';
