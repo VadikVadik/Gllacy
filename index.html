@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Gllacy</title>
 </head>
 <body class="main_page_bg">
@@ -64,10 +63,15 @@
                <p>Крем-брюле и пломбир с малиновым джемом</p>
                <a class="btn" href="">Давайте оба!</a>
            </div>
-           <div class="slider_navigation">
-               <span class="slider_toggle slider_toggle_active"></span>
-               <span class="slider_toggle"></span>
-               <span class="slider_toggle"></span>
+           <div class="slide_one">
+               <img src="image/ice-cream-bg.png" alt="" width="646" height="584">
+               <p>Крем-брюле и пломбир с малиновым джемом</p>
+               <a class="btn" href="">Давайте оба!</a>
+           </div>
+           <div class="slide_one">
+               <img src="image/ice-cream-bg.png" alt="" width="646" height="584">
+               <p>Крем-брюле и пломбир с малиновым джемом</p>
+               <a class="btn" href="">Давайте оба!</a>
            </div>
        </div>
        <section class="bonuses clearfix">
@@ -173,8 +177,14 @@
            <input class="btn" type="submit" value="Отправить">   
        </form>
     </div>
-    
-    <script src="js/script.js"></script>
-       
+    <script defer src="http://code.jquery.com/jquery-3.1.1.min.js"
+  			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  			crossorigin="anonymous"></script>
+  	<script defer src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"
+  			integrity="sha256-JklDYODbg0X+8sPiKkcFURb5z7RvlNMIaE3RA2z97vw="
+ 			crossorigin="anonymous"></script>
+ 	<script defer src="js/slick.min.js"></script>
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/script.js"></script>
 </body>
 </html>

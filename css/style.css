@@ -493,15 +493,15 @@ footer{
     position: relative;
     width: 1146px;
     margin: 0 27px;
-    padding-top: 315px;
     text-align: center;
 }
 .slide_one{
     position: relative;
+	padding-top: 315px;
 }
 .slide_one img{
     position: absolute;
-    top: -305px;
+    top: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -530,28 +530,6 @@ footer{
             border-radius: 50px;
     margin: 0 auto;
     margin-bottom: 40px;
-}
-.slider_navigation{
-    position: absolute;
-    bottom: 4%;
-    left: 0;
-}
-.slider_toggle{
-    display: inline-block;
-    vertical-align: middle;
-    width: 17px;
-    height: 17px;
-    margin-right: 4px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    cursor: pointer;
-}
-.slider_toggle_active{
-    background: #fff;
-}
-.slider_toggle:hover{
-    background: rgba(255,255,255,0.4);
 }
 .bonuses{
     width: 560px;
